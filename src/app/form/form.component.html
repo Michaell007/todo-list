@@ -1,0 +1,10 @@
+<div class="form-group">
+    <label for="exampleInputEmail1">Titre</label>
+    <input type="email" class="form-control" name="titre" [(ngModel)]="description">
+</div>
+<div class="form-group">
+    <textarea name="description" [(ngModel)]="name" cols="70" rows="5"></textarea>
+</div>
+<button type="submit" (click)="addTodo()" class="btn btn-primary">Ajouter</button>
+
+<hr>

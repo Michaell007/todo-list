@@ -1,0 +1,16 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-6">
+      <app-form (eventAddTodo)="addMyTodos($event)"></app-form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <app-list-todos [listTodos]="myTodos" (eventDeleteItem)="deleteMyTodos($event)"></app-list-todos>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
